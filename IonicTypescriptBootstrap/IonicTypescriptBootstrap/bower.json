@@ -1,0 +1,12 @@
+{
+    "name": "IonicTypescriptBootstrap",
+    "version": "1.0.0",
+    "homepage": "https://github.com/Talento90/IonicTypescriptBootstrap",
+    "authors": [ "Marco Talento <marcotalento90@gmail.com>" ],
+    "private": true,
+    "dependencies": {
+        "ionic": "driftyco/ionic-bower#1.0.0-beta.14",
+        "ng-cordova": "^0.0.3",
+        "cordova": "^3.4.0"
+    }
+}
