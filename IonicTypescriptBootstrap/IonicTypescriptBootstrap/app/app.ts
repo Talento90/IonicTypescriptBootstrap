@@ -21,8 +21,7 @@ module IonicTypescriptBootstrap {
 
         ngModule.config(["$stateProvider", "$urlRouterProvider", "$provide", "$logProvider", Configurations]);
 
-        ngModule.run(["$rootScope", "$ionicPlatform", "$log", Run]);
-       
+        ngModule.run(["$rootScope", "$ionicPlatform", "$log", Run]);      
     }
 
     //Angular Run
@@ -74,16 +73,14 @@ module IonicTypescriptBootstrap {
     //Register Angular Routes
     function RegisterRoutes($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
 
-        // Setup an abstract state for the tabs directive.
-        //$stateProvider.state("main", {
-        //    url: "/",
-        //    abstract: true,
-        //    templateUrl: "templates/Menu.html",
-        //    controller: "MenuController"
-        //});
+        $stateProvider.state("products", {
+            url: "/",
+            templateUrl: "app/templates/Products.html",
+            controller: "ProductController"
+        });
 
         // If none of the above states are matched, use the empty route.
-        //$urlRouterProvider.otherwise("/app/blank");
+        $urlRouterProvider.otherwise("/");
     }
     
     /**

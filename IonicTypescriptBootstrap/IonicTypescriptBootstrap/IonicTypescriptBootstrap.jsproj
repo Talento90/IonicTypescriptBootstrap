@@ -110,9 +110,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".bowerrc" />
+    <Content Include="app\templates\Products.html" />
     <Content Include="bower.json" />
-    <Folder Include="app\templates\" />
-    <Folder Include="images\" />
+    <Content Include="images\product_icon.png" />
     <Content Include="lib\angular-animate\.bower.json" />
     <Content Include="lib\angular-animate\angular-animate.js" />
     <Content Include="lib\angular-animate\angular-animate.min.js" />

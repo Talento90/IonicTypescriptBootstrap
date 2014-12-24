@@ -1,0 +1,8 @@
+﻿<ion-content>
+    <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+    <ion-list>
+        <ion-item ng-repeat="product in Products">
+            {{ product.Id }} - {{ product.Name }}
+        </ion-item>
+    </ion-list>
+</ion-content>
