@@ -1,0 +1,14 @@
+{
+  "name": "ng-cordova",
+  "homepage": "https://github.com/tadeucaldas/angular-cordova",
+  "version": "0.0.3",
+  "_release": "0.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.3",
+    "commit": "8381672ba02952661084b8f8fa5f2d7e3353c52a"
+  },
+  "_source": "git://github.com/tadeucaldas/angular-cordova.git",
+  "_target": "^0.0.3",
+  "_originalSource": "ng-cordova"
+}

@@ -8,12 +8,16 @@
     <link href="lib/ionic/css/ionic.min.css" rel="stylesheet" />
 </head>
 <body>
-    <p>Hello, your application is ready!</p>
+    
+    <div ng-controller="ProductController">
+        {{Products}}
+    </div>
 
     <!-- Cordova reference, this is added to your app when it's built. -->
-    <script src="cordova.js"></script>
-    <script src="scripts/platformOverrides.js"></script>
-    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="lib/ng-cordova/dist/ng-cordova.min.js"></script>
+    <script src="scripts/cordova.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>

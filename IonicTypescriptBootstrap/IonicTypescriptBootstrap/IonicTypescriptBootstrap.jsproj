@@ -111,6 +111,7 @@
   <ItemGroup>
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
+    <Folder Include="app\templates\" />
     <Folder Include="images\" />
     <Content Include="lib\angular-animate\.bower.json" />
     <Content Include="lib\angular-animate\angular-animate.js" />
@@ -153,6 +154,41 @@
     <Content Include="lib\angular\angular.min.js.map" />
     <Content Include="lib\angular\bower.json" />
     <Content Include="lib\angular\README.md" />
+    <Content Include="lib\cordova\.bower.json" />
+    <Content Include="lib\cordova\bower.json" />
+    <Content Include="lib\cordova\cordova.amazon-fireos.js" />
+    <Content Include="lib\cordova\cordova.android.js" />
+    <Content Include="lib\cordova\cordova.bada.js" />
+    <Content Include="lib\cordova\cordova.blackberry.js" />
+    <Content Include="lib\cordova\cordova.blackberry10.js" />
+    <Content Include="lib\cordova\cordova.browser.js" />
+    <Content Include="lib\cordova\cordova.errgen.js" />
+    <Content Include="lib\cordova\cordova.firefoxos.js" />
+    <Content Include="lib\cordova\cordova.ios.js" />
+    <Content Include="lib\cordova\cordova.osx.js" />
+    <Content Include="lib\cordova\cordova.test.js" />
+    <Content Include="lib\cordova\cordova.tizen.js" />
+    <Content Include="lib\cordova\cordova.ubuntu.js" />
+    <Content Include="lib\cordova\cordova.webos.js" />
+    <Content Include="lib\cordova\cordova.windows8.js" />
+    <Content Include="lib\cordova\cordova.windowsphone.js" />
+    <Content Include="lib\cordova\debug\cordova.amazon-fireos-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.android-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.bada-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.blackberry-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.blackberry10-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.browser-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.errgen-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.firefoxos-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.ios-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.osx-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.test-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.tizen-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.ubuntu-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.webos-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.windows8-debug.js" />
+    <Content Include="lib\cordova\debug\cordova.windowsphone-debug.js" />
+    <Content Include="lib\cordova\README.md" />
     <Content Include="lib\ionic\.bower.json" />
     <Content Include="lib\ionic\bower.json" />
     <Content Include="lib\ionic\css\ionic.css" />
@@ -207,6 +243,19 @@
     <Content Include="lib\ionic\scss\_type.scss" />
     <Content Include="lib\ionic\scss\_util.scss" />
     <Content Include="lib\ionic\scss\_variables.scss" />
+    <Content Include="lib\ng-cordova\.bower.json" />
+    <Content Include="lib\ng-cordova\.gitignore" />
+    <Content Include="lib\ng-cordova\.jshintrc" />
+    <Content Include="lib\ng-cordova\dist\ng-cordova.js" />
+    <Content Include="lib\ng-cordova\dist\ng-cordova.min.js" />
+    <Content Include="lib\ng-cordova\Gruntfile.js" />
+    <Content Include="lib\ng-cordova\package.json" />
+    <Content Include="lib\ng-cordova\README.md" />
+    <Content Include="lib\ng-cordova\src\core\core.js" />
+    <Content Include="lib\ng-cordova\src\events\device-ready.js" />
+    <Content Include="lib\ng-cordova\src\plugins\org.apache.cordova.camera.js" />
+    <Content Include="lib\ng-cordova\src\plugins\org.apache.cordova.file.js" />
+    <Content Include="lib\ng-cordova\test\spec\services\teste.js" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
     <Folder Include="merges\ios\" />
@@ -228,7 +277,11 @@
     </Content>
     <Content Include="index.html" />
     <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\controllers\ProductController.ts" />
+    <TypeScriptCompile Include="app\controllers\IProductScope.ts" />
+    <TypeScriptCompile Include="app\models\Product.ts" />
     <TypeScriptCompile Include="app\platformOverrides.ts" />
+    <TypeScriptCompile Include="app\References.ts" />
     <Content Include="packages.config" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />
     <Content Include="res\icons\android\icon-48-mdpi.png" />
@@ -277,6 +330,8 @@
     <Content Include="res\screens\windows\splashscreen.png" />
     <Content Include="res\screens\windows\SplashScreen.scale-240.png" />
     <Content Include="res\screens\wp8\screen-portrait.jpg" />
+    <TypeScriptCompile Include="app\services\IProductService.ts" />
+    <TypeScriptCompile Include="app\services\ProductService.ts" />
     <TypeScriptCompile Include="lib\angular-ui-router\api\angular-ui-router.d.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -306,6 +361,10 @@
     <TypeScriptCompile Include="scripts\typings\cordova\plugins\Splashscreen.d.ts" />
     <TypeScriptCompile Include="scripts\typings\cordova\plugins\Vibration.d.ts" />
     <TypeScriptCompile Include="scripts\typings\cordova\plugins\WebSQL.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\custom\cordova.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\custom\extensions.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\custom\ionic.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\custom\plugins.d.ts" />
     <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <PropertyGroup>
@@ -319,7 +378,7 @@
     <TypeScriptOutFile>scripts/app.js</TypeScriptOutFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptCompileOnSaveEnabled>true</TypeScriptCompileOnSaveEnabled>
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
     <TypeScriptSourceMap>false</TypeScriptSourceMap>
     <TypeScriptOutFile>scripts/app.js</TypeScriptOutFile>
