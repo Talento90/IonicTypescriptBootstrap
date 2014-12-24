@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x86">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone 8">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone (Universal)">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x64">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x86">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-ARM">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone 8">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone (Universal)">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x86">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-ARM">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone 8">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone (Universal)">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>03cb30b0-bf3b-4ede-8bd0-bc6fcfef3dea</ProjectGuid>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
+    <Folder Include="images\" />
+    <Content Include="lib\angular-animate\.bower.json" />
+    <Content Include="lib\angular-animate\angular-animate.js" />
+    <Content Include="lib\angular-animate\angular-animate.min.js" />
+    <Content Include="lib\angular-animate\angular-animate.min.js.map" />
+    <Content Include="lib\angular-animate\bower.json" />
+    <Content Include="lib\angular-animate\package.json" />
+    <Content Include="lib\angular-animate\README.md" />
+    <Content Include="lib\angular-sanitize\.bower.json" />
+    <Content Include="lib\angular-sanitize\angular-sanitize.js" />
+    <Content Include="lib\angular-sanitize\angular-sanitize.min.js" />
+    <Content Include="lib\angular-sanitize\angular-sanitize.min.js.map" />
+    <Content Include="lib\angular-sanitize\bower.json" />
+    <Content Include="lib\angular-sanitize\package.json" />
+    <Content Include="lib\angular-sanitize\README.md" />
+    <Content Include="lib\angular-ui-router\.bower.json" />
+    <Content Include="lib\angular-ui-router\bower.json" />
+    <Content Include="lib\angular-ui-router\CHANGELOG.md" />
+    <Content Include="lib\angular-ui-router\CONTRIBUTING.md" />
+    <Content Include="lib\angular-ui-router\LICENSE" />
+    <Content Include="lib\angular-ui-router\README.md" />
+    <Content Include="lib\angular-ui-router\release\angular-ui-router.js" />
+    <Content Include="lib\angular-ui-router\release\angular-ui-router.min.js" />
+    <Content Include="lib\angular-ui-router\src\common.js" />
+    <Content Include="lib\angular-ui-router\src\resolve.js" />
+    <Content Include="lib\angular-ui-router\src\state.js" />
+    <Content Include="lib\angular-ui-router\src\stateDirectives.js" />
+    <Content Include="lib\angular-ui-router\src\stateFilters.js" />
+    <Content Include="lib\angular-ui-router\src\templateFactory.js" />
+    <Content Include="lib\angular-ui-router\src\urlMatcherFactory.js" />
+    <Content Include="lib\angular-ui-router\src\urlRouter.js" />
+    <Content Include="lib\angular-ui-router\src\view.js" />
+    <Content Include="lib\angular-ui-router\src\viewDirective.js" />
+    <Content Include="lib\angular-ui-router\src\viewScroll.js" />
+    <Content Include="lib\angular\.bower.json" />
+    <Content Include="lib\angular\angular-csp.css" />
+    <Content Include="lib\angular\angular.js" />
+    <Content Include="lib\angular\angular.min.js" />
+    <Content Include="lib\angular\angular.min.js.gzip" />
+    <Content Include="lib\angular\angular.min.js.map" />
+    <Content Include="lib\angular\bower.json" />
+    <Content Include="lib\angular\README.md" />
+    <Content Include="lib\ionic\.bower.json" />
+    <Content Include="lib\ionic\bower.json" />
+    <Content Include="lib\ionic\css\ionic.css" />
+    <Content Include="lib\ionic\css\ionic.min.css" />
+    <Content Include="lib\ionic\fonts\ionicons.eot" />
+    <Content Include="lib\ionic\fonts\ionicons.svg" />
+    <Content Include="lib\ionic\fonts\ionicons.ttf" />
+    <Content Include="lib\ionic\fonts\ionicons.woff" />
+    <Content Include="lib\ionic\js\ionic-angular.js" />
+    <Content Include="lib\ionic\js\ionic-angular.min.js" />
+    <Content Include="lib\ionic\js\ionic.bundle.js" />
+    <Content Include="lib\ionic\js\ionic.bundle.min.js" />
+    <Content Include="lib\ionic\js\ionic.js" />
+    <Content Include="lib\ionic\js\ionic.min.js" />
+    <Content Include="lib\ionic\README.md" />
+    <Content Include="lib\ionic\scss\ionic.scss" />
+    <Content Include="lib\ionic\scss\ionicons\ionicons.scss" />
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-animation.scss" />
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-font.scss" />
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-icons.scss" />
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-variables.scss" />
+    <Content Include="lib\ionic\scss\_action-sheet.scss" />
+    <Content Include="lib\ionic\scss\_animations.scss" />
+    <Content Include="lib\ionic\scss\_backdrop.scss" />
+    <Content Include="lib\ionic\scss\_badge.scss" />
+    <Content Include="lib\ionic\scss\_bar.scss" />
+    <Content Include="lib\ionic\scss\_button-bar.scss" />
+    <Content Include="lib\ionic\scss\_button.scss" />
+    <Content Include="lib\ionic\scss\_checkbox.scss" />
+    <Content Include="lib\ionic\scss\_form.scss" />
+    <Content Include="lib\ionic\scss\_grid.scss" />
+    <Content Include="lib\ionic\scss\_items.scss" />
+    <Content Include="lib\ionic\scss\_list.scss" />
+    <Content Include="lib\ionic\scss\_loading.scss" />
+    <Content Include="lib\ionic\scss\_menu.scss" />
+    <Content Include="lib\ionic\scss\_mixins.scss" />
+    <Content Include="lib\ionic\scss\_modal.scss" />
+    <Content Include="lib\ionic\scss\_platform.scss" />
+    <Content Include="lib\ionic\scss\_popover.scss" />
+    <Content Include="lib\ionic\scss\_popup.scss" />
+    <Content Include="lib\ionic\scss\_progress.scss" />
+    <Content Include="lib\ionic\scss\_radio.scss" />
+    <Content Include="lib\ionic\scss\_range.scss" />
+    <Content Include="lib\ionic\scss\_reset.scss" />
+    <Content Include="lib\ionic\scss\_scaffolding.scss" />
+    <Content Include="lib\ionic\scss\_select.scss" />
+    <Content Include="lib\ionic\scss\_slide-box.scss" />
+    <Content Include="lib\ionic\scss\_split-pane.scss" />
+    <Content Include="lib\ionic\scss\_tabs.scss" />
+    <Content Include="lib\ionic\scss\_toggle.scss" />
+    <Content Include="lib\ionic\scss\_transitions.scss" />
+    <Content Include="lib\ionic\scss\_type.scss" />
+    <Content Include="lib\ionic\scss\_util.scss" />
+    <Content Include="lib\ionic\scss\_variables.scss" />
+    <Content Include="merges\android\scripts\android2.3-jscompat.js" />
+    <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="merges\ios\" />
+    <Content Include="merges\windows\scripts\platformOverrides.js" />
+    <Content Include="merges\windows\scripts\winstore-jscompat.js" />
+    <Folder Include="merges\wp8\" />
+    <Folder Include="res\icons\android\" />
+    <Folder Include="res\icons\ios\" />
+    <Folder Include="res\icons\wp8\" />
+    <Folder Include="res\icons\windows\" />
+    <Folder Include="res\screens\android\" />
+    <Folder Include="res\screens\ios\" />
+    <Folder Include="res\screens\windows\" />
+    <Folder Include="res\screens\wp8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\platformOverrides.ts" />
+    <Content Include="packages.config" />
+    <Content Include="res\icons\android\icon-36-ldpi.png" />
+    <Content Include="res\icons\android\icon-48-mdpi.png" />
+    <Content Include="res\icons\android\icon-72-hdpi.png" />
+    <Content Include="res\icons\android\icon-96-xhdpi.png" />
+    <Content Include="res\icons\ios\icon-40.png" />
+    <Content Include="res\icons\ios\icon-40-2x.png" />
+    <Content Include="res\icons\ios\icon-50.png" />
+    <Content Include="res\icons\ios\icon-50-2x.png" />
+    <Content Include="res\icons\ios\icon-57.png" />
+    <Content Include="res\icons\ios\icon-57-2x.png" />
+    <Content Include="res\icons\ios\icon-60.png" />
+    <Content Include="res\icons\ios\icon-60-2x.png" />
+    <Content Include="res\icons\ios\icon-72.png" />
+    <Content Include="res\icons\ios\icon-72-2x.png" />
+    <Content Include="res\icons\ios\icon-76.png" />
+    <Content Include="res\icons\ios\icon-76-2x.png" />
+    <Content Include="res\icons\ios\icon-small.png" />
+    <Content Include="res\icons\ios\icon-small-2x.png" />
+    <Content Include="res\icons\windows\logo.png" />
+    <Content Include="res\icons\windows\smalllogo.png" />
+    <Content Include="res\icons\windows\Square150x150Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square44x44Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square71x71Logo.scale-240.png" />
+    <Content Include="res\icons\windows\storelogo.png" />
+    <Content Include="res\icons\windows\StoreLogo.scale-240.png" />
+    <Content Include="res\icons\windows\Wide310x150Logo.scale-240.png" />
+    <Content Include="res\icons\wp8\icon-62-tile.png" />
+    <Content Include="res\icons\wp8\icon-173-tile.png" />
+    <Content Include="res\native\android\ant.properties" />
+    <Content Include="res\screens\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screens\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screens\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-568h-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screens\windows\splashscreen.png" />
+    <Content Include="res\screens\windows\SplashScreen.scale-240.png" />
+    <Content Include="res\screens\wp8\screen-portrait.jpg" />
+    <TypeScriptCompile Include="lib\angular-ui-router\api\angular-ui-router.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova-ionic\cordova-ionic.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova-ionic\plugins\keyboard.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\cordova.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\BatteryStatus.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Camera.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Contacts.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Device.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\DeviceMotion.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\DeviceOrientation.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Dialogs.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\FileSystem.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\FileTransfer.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Globalization.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\InAppBrowser.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Media.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\MediaCapture.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\NetworkInformation.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Push.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Splashscreen.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Vibration.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\WebSQL.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptOutFile>scripts/app.js</TypeScriptOutFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptOutFile>scripts/app.js</TypeScriptOutFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptOutFile>scripts/app.js</TypeScriptOutFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Tools for Apache Cordova</ProjectUISubcaption>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetPlatformIdentifier>MDD</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Tools for Apache Cordova could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Tools for Apache Cordova has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+</Project>
