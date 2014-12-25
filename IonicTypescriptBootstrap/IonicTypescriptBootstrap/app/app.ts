@@ -73,7 +73,7 @@ module IonicTypescriptBootstrap {
     //Register Angular Routes
     function RegisterRoutes($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
 
-        $stateProvider.state("products", {
+        $stateProvider.state("index", {
             url: "/",
             templateUrl: "app/templates/Products.html",
             controller: "ProductController"

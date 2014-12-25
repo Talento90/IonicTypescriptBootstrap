@@ -1,8 +1,15 @@
-﻿<ion-content>
-    <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
-    <ion-list>
-        <ion-item ng-repeat="product in Products">
-            {{ product.Id }} - {{ product.Name }}
-        </ion-item>
-    </ion-list>
-</ion-content>
+﻿<ion-view>
+
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Product List</h1>
+    </ion-header-bar>
+
+    <ion-content>
+        <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+        <ion-list>
+            <ion-item ng-repeat="product in Products" ng-click="Events.ShowProductDetail(product)">
+                {{ product.Id }} - {{ product.Name }}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
