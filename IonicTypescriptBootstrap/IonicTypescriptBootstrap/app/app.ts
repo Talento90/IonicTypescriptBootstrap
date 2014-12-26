@@ -16,17 +16,17 @@ module IonicTypescriptBootstrap {
     function Initialize(): void {  
         ngModule = angular.module("app", ["ui.router", "ionic"]);
 
+        //Register Angular Components
         ngModule.service("ProductService", IonicTypescriptBootstrap.Services.ProductService);
         ngModule.controller("ProductController", IonicTypescriptBootstrap.Controllers.ProductController);
 
+        //Setting Configurations and Run
         ngModule.config(["$stateProvider", "$urlRouterProvider", "$provide", "$logProvider", Configurations]);
-
         ngModule.run(["$rootScope", "$ionicPlatform", "$log", Run]);      
     }
 
     //Angular Run
     function Run($rootScope: ng.IScope, $ionicPlatform: Ionic.IPlatform, $log: ng.ILogService): void {
-
         // Once AngularJs has loaded we'll wait for the Ionic platform's ready event.
         // This event will be fired once the device ready event fires via Cordova.
         $ionicPlatform.ready(function () {
