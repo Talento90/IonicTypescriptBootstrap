@@ -6,7 +6,6 @@
     "private": true,
     "dependencies": {
         "ionic": "driftyco/ionic-bower#1.0.0-beta.14",
-        "ng-cordova": "^0.0.3",
         "cordova": "^3.4.0"
     }
 }
